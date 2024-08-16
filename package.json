@@ -12,8 +12,9 @@
     "coverage": "truffle run coverage",
     "deployMumbai": "truffle migrate --network mumbai",
     "deployMatic": "truffle migrate --network matic --verbose-rpc --interactive --skip-dry-run --reset",
-    "verifyMumbai" : "truffle run verify CluaidoNFT --network mumbai",
-    "resetDeploy"  : "truffle deploy --reset --network mumbai"
+    "verifyMumbai": "truffle run verify CluaidoNFT --network mumbai",
+    "resetDeploy": "truffle deploy --reset --network mumbai",
+    "test_run": "npx hardhat test"
   },
   "author": "drbrown",
   "license": "ISC",
@@ -24,7 +25,7 @@
     "coveralls": "^3.1.1",
     "eth-gas-reporter": "^0.2.24",
     "ganache-cli": "6.12.2",
-    "solidity-coverage": "0.7.18",
+    "solidity-coverage": "^0.7.18",
     "truffle-plugin-verify": "^0.5.26"
   },
   "dependencies": {

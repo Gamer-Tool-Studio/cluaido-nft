@@ -1,0 +1,18 @@
+{
+  "name": "CLUAIDO (suspects collection)",
+  "description": "A unique collection of NFT suspects for the Cluaido game. Each suspect has its own story and traits.",
+  "image": "https://coral-odd-wren-489.mypinata.cloud/ipfs/QmPL7xRiTVQWDByBEuS6tsQtbX4wrAGxDo5pddZjZkWyp6",
+  "external_link": "https://gamertoolstudio.com/",
+  "seller_fee_basis_points": 500, 
+  "fee_recipient": "0x50898937aA261f582e9C6992A8c400EE17dE3B42",
+  "attributes": [
+    {
+      "trait_type": "Game",
+      "value": "Cluaido"
+    },
+    {
+      "trait_type": "Category",
+      "value": "Board Game Characters"
+    }
+  ]
+}
