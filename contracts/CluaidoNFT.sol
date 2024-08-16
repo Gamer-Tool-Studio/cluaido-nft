@@ -11,7 +11,7 @@ import "@thirdweb-dev/contracts/extension/Multicall.sol";
 
 
 contract CluaidoCollection is ERC1155, Pausable, Ownable, ContractMetadata, LazyMint, Multicall {
-    uint256 public mintPrice = 5 * (10 ** 18); //  stablecoins with 18 decimals
+    uint256 public mintPrice = 0.2 * (10 ** 18); //  stablecoins with 18 decimals
 
     mapping(uint256 => uint256) public mintedCount;
     mapping(uint256 => uint256) public maxSupply;   
@@ -47,7 +47,7 @@ contract CluaidoCollection is ERC1155, Pausable, Ownable, ContractMetadata, Lazy
         maxSupply[SUSPECT_7_ID] = 10000000;
 
         //set contract url from the interface       
-        _setupContractURI("https://coral-odd-wren-489.mypinata.cloud/ipfs/QmNQER56JidkvXGjkCpjsUdcb7wH1zHF8vZBe5Kdw6x8xQ");
+        _setupContractURI("https://coral-odd-wren-489.mypinata.cloud/ipfs/QmchFhLdfzZjuqPRbwVvt2zQJaQ9dAMuZhCTCWqLDLSEFy");
 
          // Set accepted tokens
         for (uint i = 0; i < _acceptedTokens.length; i++) {

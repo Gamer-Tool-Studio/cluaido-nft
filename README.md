@@ -20,10 +20,9 @@ Below are the addresses of the contracts deployed on different blockchain networ
 
 | Chain                | Chain ID | Contract Type | Contract Address                                                                 |
 |----------------------|----------|---------------|----------------------------------------------------------------------------------|
-| **BNB Smart Chain**  | 56       | ERC20         | [0xF269CC8B597a13fb1B2a72Ce6F0C9677f89dd0ee](https://bscscan.com/address/0xF269CC8B597a13fb1B2a72Ce6F0C9677f89dd0ee) |
-|                      |          | ERC1155       | [0x545C05eaE06A171a583Fbad43e9F065986a13fD2](https://bscscan.com/address/0x545C05eaE06A171a583Fbad43e9F065986a13fD2) |
-| **Polygon (Testnet)** | 80001    | ERC20         | [0xF269CC8B597a13fb1B2a72Ce6F0C9677f89dd0ee](https://amoy.polygonscan.com/address/0xF269CC8B597a13fb1B2a72Ce6F0C9677f89dd0ee) |
-|                      |          | ERC1155       | [0x545C05eaE06A171a583Fbad43e9F065986a13fD2](https://amoy.polygonscan.com/address/0x545C05eaE06A171a583Fbad43e9F065986a13fD2) |
+| **BNB Smart Chain**  | 56       | ERC1155         | [0xF269CC8B597a13fb1B2a72Ce6F0C9677f89dd0ee](https://bscscan.com/address/0xF269CC8B597a13fb1B2a72Ce6F0C9677f89dd0ee) |
+| **Polygon (Testnet)** | 80001    | ERC20         | [0xF269CC8B597a13fb1B2a72Ce6F0C9677f89dd0ee]https://amoy.polygonscan.com/address/0xF269CC8B597a13fb1B2a72Ce6F0C9677f89dd0ee) |
+|                      |          | ERC1155       | [0x545C05eaE06A171a583Fbad43e9F065986a13fD2](https://mumbai.polygonscan.com/address/0x545C05eaE06A171a583Fbad43e9F065986a13fD2) |
 | **Arbitrum Sepolia**  | 421611   | ERC20         | [0xd0dCB97bC361C67b36a2254eA31909499118E1FB](https://sepolia.arbiscan.io/address/0xd0dCB97bC361C67b36a2254eA31909499118E1FB) |
 |                      |          | ERC1155       | [0x850EEE3Fd95Abd59E9160493f3E66112aC33EA97](https://sepolia.arbiscan.io/address/0x850EEE3Fd95Abd59E9160493f3E66112aC33EA97) |
 
