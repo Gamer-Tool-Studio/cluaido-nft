@@ -27,7 +27,7 @@ Below are the addresses of the contracts deployed on different blockchain networ
 | **Polygon (Testnet)** | 80001    | ERC20         | [0xF269CC8B597a13fb1B2a72Ce6F0C9677f89dd0ee](https://amoy.polygonscan.com/address/0xF269CC8B597a13fb1B2a72Ce6F0C9677f89dd0ee) |
 |                      |          | ERC1155       | [0x545C05eaE06A171a583Fbad43e9F065986a13fD2](https://mumbai.polygonscan.com/address/0x545C05eaE06A171a583Fbad43e9F065986a13fD2) |
 | **Arbitrum Sepolia**  | 421611   | ERC20         | [0xd0dCB97bC361C67b36a2254eA31909499118E1FB](https://sepolia.arbiscan.io/address/0xd0dCB97bC361C67b36a2254eA31909499118E1FB) |
-|                      |          | ERC1155       | [0xAdCE9e028E91f12cA67707a0ce1195689b6950ce](https://sepolia.arbiscan.io/address/0xAdCE9e028E91f12cA67707a0ce1195689b6950ce) |
+|                      |          | ERC1155       | [0x52772940628d1EBc08E1B50C39e466495f808F89](https://sepolia.arbiscan.io/address/0x52772940628d1EBc08E1B50C39e466495f808F89) |
 
 ## Getting Started
 
