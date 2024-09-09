@@ -1,6 +1,6 @@
-# Cluaido Project
+# Cluaido NFTS
 
-Welcome to the Cluaido Project! This repository contains the smart contracts and deployment scripts for the Cluaido NFT collection and the CluaidoCoin (ERC20) token. The project is deployed across multiple blockchain networks, including BNB Smart Chain, Polygon testnet, and Arbitrum Sepolia.
+Welcome to the ClUAIDO NFTS! This repository contains the smart contracts and deployment scripts for the Cluaido NFT collection. The project is deployed across multiple blockchain networks and testnets, including BNB Smart Chain, Polygon,Arbitrum, Avalanche and others.
 
 ## Table of Contents
 
@@ -10,9 +10,15 @@ Welcome to the Cluaido Project! This repository contains the smart contracts and
 - [Contributing](#contributing)
 - [License](#license)
 
-## Project Overview
+## Overview
 
-Cluaido Project is a decentralized application (DApp) that leverages the power of blockchain technology to create a unique and interactive NFT experience. The project includes the CluaidoCoin (ERC20 token), which is used for transactions within the ecosystem, and the Cluaido NFT collection (ERC1155), which represents various digital assets.
+CLUAIDO is a procedural mystery game where you play as a detective racing against time to solve a murder case. As toxic gas slowly shrinks the map, find hidden clues and freely interrogate suspects (AI agents) with open-ended questioning. 
+As a crowdfunding initiative we launched the Demo alongside a challenge to identify the culprit before the final game release. Players will be able to mint NFTs of their favourite suspects for a chance to win some rewards.
+
+ - #### Play the Demo [here.](https://gamertoolstudio.com/cluaido/)
+
+ - #### Read the NFT Crowdfunding rules [here.](https://medium.com/me/stats/post/d1189568a6a1)
+
 
 ## Contracts Deployed
 
@@ -31,7 +37,7 @@ Below are the addresses of the contracts deployed on different blockchain networ
 
 ## Getting Started
 
-To get started with the Cluaido Project, clone this repository and follow the instructions in the `truffle-config.js` to set up the project. You will need to install the necessary dependencies and configure your environment variables for deployment.
+To run this project in your environment, clone this repository and follow the instructions in the `truffle-config.js` to set up the project. You will need to install the necessary dependencies and configure your environment variables for deployment.
 
 ```bash
 git clone https://github.com/drBrown/cluaido-project.git
