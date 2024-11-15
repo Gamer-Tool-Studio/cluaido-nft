@@ -7,12 +7,9 @@ import "@openzeppelin/contracts/security/Pausable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@thirdweb-dev/contracts/extension/ContractMetadata.sol";
 import "@thirdweb-dev/contracts/extension/LazyMint.sol";
-import "@thirdweb-dev/contracts/extension/Multicall.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 
-
-
-contract CluaidoCollection is ERC1155, Pausable, Ownable, ContractMetadata, LazyMint, Multicall {
+contract CluaidoCollection is ERC1155, Pausable, Ownable, ContractMetadata, LazyMint {
     uint256 public mintPrice = 0.5 * (10 ** 18); //  stablecoins with 18 decimals
 
     mapping(uint256 => uint256) public mintedCount;
@@ -56,11 +53,6 @@ contract CluaidoCollection is ERC1155, Pausable, Ownable, ContractMetadata, Lazy
         for (uint i = 0; i < _acceptedTokens.length; i++) {
             acceptedTokens[_acceptedTokens[i]] = true;
         }
-    }
-
-    // overrride _msgSender from Multicall
-    function _msgSender() internal view override(Context, Multicall) returns (address) {
-        return super._msgSender();
     }
 
     function _canLazyMint() internal view virtual override returns (bool) {
