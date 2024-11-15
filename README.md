@@ -29,7 +29,8 @@ Below are the addresses of the contracts deployed on different blockchain networ
 
 | Chain                | Chain ID | Contract Type | Contract Address                                                                 |
 |----------------------|----------|---------------|----------------------------------------------------------------------------------|
-|                      |          | ERC1155       |  [0xd0dCB97bC361C67b36a2254eA31909499118E1FB](https://optimistic.etherscan.io/address/0xd0dCB97bC361C67b36a2254eA31909499118E1FB) |
+|                      |          | ERC           |  [0x94b008aa00579c1307b0ef2c499ad98a8ce58e58](https://optimistic.etherscan.io/address/0x94b008aa00579c1307b0ef2c499ad98a8ce58e58) |
+|                      |          | ERC1155       |  [0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85](https://optimistic.etherscan.io/address/0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85) |
 | **OP Mainnet**       | 10       | Factory       | [0xF269CC8B597a13fb1B2a72Ce6F0C9677f89dd0ee](https://optimistic.etherscan.io/address/0xF269CC8B597a13fb1B2a72Ce6F0C9677f89dd0ee) |
 |                      |          | ERC1155       | [0x52772940628d1EBc08E1B50C39e466495f808F89](https://sepolia.arbiscan.io/address/0x52772940628d1EBc08E1B50C39e466495f808F89) |
 | **BNB Smart Chain**  | 56       | ERC1155         | [0x6313Ed503e467c235B2f3E1b6699F6EAf77A1FCC](https://bscscan.com/address/0x6313Ed503e467c235B2f3E1b6699F6EAf77A1FCC) |
