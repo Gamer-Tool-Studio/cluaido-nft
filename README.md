@@ -1,5 +1,7 @@
 # Cluaido NFTS
 
+#edit
+
 Welcome to the ClUAIDO NFTS! This repository contains the smart contracts and deployment scripts for the Cluaido NFT collection. The project is deployed across multiple blockchain networks and testnets, including BNB Smart Chain, Polygon,Arbitrum, Avalanche and others.
 
 ## Table of Contents

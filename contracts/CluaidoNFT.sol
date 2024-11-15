@@ -8,10 +8,12 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@thirdweb-dev/contracts/extension/ContractMetadata.sol";
 import "@thirdweb-dev/contracts/extension/LazyMint.sol";
 import "@thirdweb-dev/contracts/extension/Multicall.sol";
+import "@openzeppelin/contracts/utils/Strings.sol";
+
 
 
 contract CluaidoCollection is ERC1155, Pausable, Ownable, ContractMetadata, LazyMint, Multicall {
-    uint256 public mintPrice = 0.2 * (10 ** 18); //  stablecoins with 18 decimals
+    uint256 public mintPrice = 0.5 * (10 ** 18); //  stablecoins with 18 decimals
 
     mapping(uint256 => uint256) public mintedCount;
     mapping(uint256 => uint256) public maxSupply;   
@@ -46,6 +48,7 @@ contract CluaidoCollection is ERC1155, Pausable, Ownable, ContractMetadata, Lazy
         maxSupply[SUSPECT_6_ID] = 10000000;
         maxSupply[SUSPECT_7_ID] = 10000000;
 
+
         //set contract url from the interface       
         _setupContractURI("https://coral-odd-wren-489.mypinata.cloud/ipfs/QmchFhLdfzZjuqPRbwVvt2zQJaQ9dAMuZhCTCWqLDLSEFy");
 
@@ -69,14 +72,15 @@ contract CluaidoCollection is ERC1155, Pausable, Ownable, ContractMetadata, Lazy
     }
 
 
-    function mint(uint256 id, address paymentToken) public whenNotPaused {
+    function mint(uint256 id, uint256 amount, address paymentToken) public whenNotPaused {
         require(id >= SUSPECT_1_ID && id <= SUSPECT_7_ID, "Invalid suspect ID");
         require(mintedCount[id] < maxSupply[id], "Max supply reached for this ID");
         require(acceptedTokens[paymentToken], "Token not accepted for payment");
-        require(IERC20(paymentToken).transferFrom(msg.sender, address(this), mintPrice), "Transfer failed");
-        _mint(msg.sender, id, 1, "");
-        mintedCount[id] += 1;
-        emit Minted(msg.sender, id, 1);
+        require(amount >= 1 && amount <= 25, "Mint amount should be between 1 and 25");
+        require(IERC20(paymentToken).transferFrom(msg.sender, address(this), amount * mintPrice), "Transfer failed");
+        _mint(msg.sender, id, amount, "");
+        mintedCount[id] += amount;
+        emit Minted(msg.sender, id, amount);
     }
 
     function withdrawFunds(address token) public onlyOwner {
@@ -113,4 +117,17 @@ contract CluaidoCollection is ERC1155, Pausable, Ownable, ContractMetadata, Lazy
     function unpause() public onlyOwner {
         _unpause();
     }
+
+
+    function replaceId(string memory uriBase, uint256 tokenId) internal pure returns (string memory) {
+        // Convert the tokenId to a string
+        string memory tokenIdStr = Strings.toString(tokenId);
+        
+        // Find the "{id}" placeholder and replace it with the actual tokenId
+        return string(abi.encodePacked(
+            uriBase, tokenIdStr, ".json"
+        ));
+    }
+
+
 }
