@@ -27,18 +27,17 @@ As a crowdfunding initiative we launched the Demo alongside a challenge to ident
 Below are the addresses of the contracts deployed on different blockchain networks. You can click on the addresses to view them on the respective blockchain explorers.
 
 
-
 | Chain                | Chain ID | Contract Type | Contract Address                                                                 |
 |----------------------|----------|---------------|----------------------------------------------------------------------------------|
-|                      |          | ERC1155       | [0x6313Ed503e467c235B2f3E1b6699F6EAf77A1FCC](https://amoy.polygonscan.com/address/0x6313Ed503e467c235B2f3E1b6699F6EAf77A1FCC) |
-| **OP**               | 10       | Factory         | [0xF269CC8B597a13fb1B2a72Ce6F0C9677f89dd0ee](https://optimistic.etherscan.io/address/0xF269CC8B597a13fb1B2a72Ce6F0C9677f89dd0ee) |
+|                      |          | ERC1155       |  [0xd0dCB97bC361C67b36a2254eA31909499118E1FB](https://optimistic.etherscan.io/address/0xd0dCB97bC361C67b36a2254eA31909499118E1FB) |
+| **OP Mainnet**       | 10       | Factory       | [0xF269CC8B597a13fb1B2a72Ce6F0C9677f89dd0ee](https://optimistic.etherscan.io/address/0xF269CC8B597a13fb1B2a72Ce6F0C9677f89dd0ee) |
 |                      |          | ERC1155       | [0x52772940628d1EBc08E1B50C39e466495f808F89](https://sepolia.arbiscan.io/address/0x52772940628d1EBc08E1B50C39e466495f808F89) |
 | **BNB Smart Chain**  | 56       | ERC1155         | [0x6313Ed503e467c235B2f3E1b6699F6EAf77A1FCC](https://bscscan.com/address/0x6313Ed503e467c235B2f3E1b6699F6EAf77A1FCC) |
-|                 |        | BUSD-PEG         | [0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56](https://bscscan.com/address/0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56) |
-|                 |        | FDUSD         | [0xc5f0f7b66764F6ec8C8Dff7BA683102295E16409](https://bscscan.com/address/0xc5f0f7b66764F6ec8C8Dff7BA683102295E16409) |
-| **Polygon (Testnet)** | 80001    | ERC20         | [0xF269CC8B597a13fb1B2a72Ce6F0C9677f89dd0ee](https://amoy.polygonscan.com/address/0xF269CC8B597a13fb1B2a72Ce6F0C9677f89dd0ee) |
+|                      |          | BUSD-PEG         | [0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56](https://bscscan.com/address/0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56) |
+|                      |          | FDUSD         | [0xc5f0f7b66764F6ec8C8Dff7BA683102295E16409](https://bscscan.com/address/0xc5f0f7b66764F6ec8C8Dff7BA683102295E16409) |
+| **Polygon (Testnet)** | 80001   | ERC20         | [0xF269CC8B597a13fb1B2a72Ce6F0C9677f89dd0ee](https://amoy.polygonscan.com/address/0xF269CC8B597a13fb1B2a72Ce6F0C9677f89dd0ee) |
 |                      |          | ERC1155       | [0x6313Ed503e467c235B2f3E1b6699F6EAf77A1FCC](https://amoy.polygonscan.com/address/0x6313Ed503e467c235B2f3E1b6699F6EAf77A1FCC) |
-| **Arbitrum Sepolia**  | 421611   | ERC20         | [0xd0dCB97bC361C67b36a2254eA31909499118E1FB](https://sepolia.arbiscan.io/address/0xd0dCB97bC361C67b36a2254eA31909499118E1FB) |
+| **Arbitrum Sepolia**  | 421611  | ERC20         | [0xd0dCB97bC361C67b36a2254eA31909499118E1FB](https://sepolia.arbiscan.io/address/0xd0dCB97bC361C67b36a2254eA31909499118E1FB) |
 |                      |          | ERC1155       | [0x52772940628d1EBc08E1B50C39e466495f808F89](https://sepolia.arbiscan.io/address/0x52772940628d1EBc08E1B50C39e466495f808F89) |
 
 ## Getting Started
