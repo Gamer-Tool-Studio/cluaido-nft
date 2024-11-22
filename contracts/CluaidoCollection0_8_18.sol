@@ -45,6 +45,8 @@ contract CluaidoCollection is ERC1155, Pausable, Ownable {
         maxSupply[SUSPECT_7_ID] = 10000000;
 
 
+        _contractURI = "https://coral-odd-wren-489.mypinata.cloud/ipfs/QmchFhLdfzZjuqPRbwVvt2zQJaQ9dAMuZhCTCWqLDLSEFy";
+
          // Set accepted tokens
         for (uint i = 0; i < _acceptedTokens.length; i++) {
             acceptedTokens[_acceptedTokens[i]] = true;
@@ -99,15 +101,12 @@ contract CluaidoCollection is ERC1155, Pausable, Ownable {
     }
 
 
-    function replaceId(string memory uriBase, uint256 tokenId) internal pure returns (string memory) {
-        // Convert the tokenId to a string
-        string memory tokenIdStr = Strings.toString(tokenId);
-        
-        // Find the "{id}" placeholder and replace it with the actual tokenId
-        return string(abi.encodePacked(
-            uriBase, tokenIdStr, ".json"
-        ));
+    function setContractURI(string memory newContractURI) public onlyOwner {
+        _contractURI = newContractURI;
     }
 
+    function contractURI() public view returns (string memory) {
+        return _contractURI;
+    }
 
 }
