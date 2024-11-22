@@ -22,6 +22,16 @@ As a crowdfunding initiative we launched the Demo alongside a challenge to ident
  - #### Read the NFT Crowdfunding rules [here.](https://medium.com/me/stats/post/d1189568a6a1)
 
 
+ ## SAGA chainlet info
+
+ | **Descrição**                  | **URL/Endereço**                                                                                          | **Tipo**  |
+|--------------------------------|-----------------------------------------------------------------------------------------------------------|-----------|
+| Chainlet Explorer URL          | [Link para o Explorer](https://gamerstudiochain-2732190003600000-1.sagaexplorer.io/)                      | -         |
+| CluaidoCoins Contract Address  | [Link para o Contrato](https://gamerstudiochain-2732190003600000-1.sagaexplorer.io/0x6313Ed503e467c235B2f3E1b6699F6EAf77A1FCC)                      | ERC20     |
+| CuiadoCollection Address       | [Link para o Contrato](https://gamerstudiochain-2732190003600000-1.sagaexplorer.io/0x576ACDC56438596539f02De6c877704d2afA77AC)                      | ERC1155   |
+
+
+
 ## Contracts Deployed
 
 Below are the addresses of the contracts deployed on different blockchain networks. You can click on the addresses to view them on the respective blockchain explorers.
