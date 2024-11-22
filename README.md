@@ -27,8 +27,8 @@ As a crowdfunding initiative we launched the Demo alongside a challenge to ident
  | **Descrição**                  | **URL/Endereço**                                                                                          | **Tipo**  |
 |--------------------------------|-----------------------------------------------------------------------------------------------------------|-----------|
 | Chainlet Explorer URL          | [Link para o Explorer](https://gamerstudiochain-2732190003600000-1.sagaexplorer.io/)                      | -         |
-| CluaidoCoins Contract Address  | [Link para o Contrato](https://gamerstudiochain-2732190003600000-1.sagaexplorer.io/0x6313Ed503e467c235B2f3E1b6699F6EAf77A1FCC)                      | ERC20     |
-| CuiadoCollection Address       | [Link para o Contrato](https://gamerstudiochain-2732190003600000-1.sagaexplorer.io/0x576ACDC56438596539f02De6c877704d2afA77AC)                      | ERC1155   |
+| CluaidoCoins Contract Address  | [Link para o Contrato](https://gamerstudiochain-2732190003600000-1.sagaexplorer.io/token/0x6313Ed503e467c235B2f3E1b6699F6EAf77A1FCC)                      | ERC20     |
+| CuiadoCollection Address       | [Link para o Contrato](https://gamerstudiochain-2732190003600000-1.sagaexplorer.io/address/0x56b4fAAfA1AF53553542429aB9bC77F55E9722f7)                      | ERC1155   |
 
 
 
