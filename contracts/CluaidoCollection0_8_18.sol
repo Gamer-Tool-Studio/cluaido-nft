@@ -35,7 +35,7 @@ contract CluaidoCollection is ERC1155, Pausable, Ownable {
     event TokenAccepted(address token);
     event TokenRemoved(address token);
 
-    constructor(address[] memory _acceptedTokens) ERC1155("https://npc-gpt-api-04c6279a15ad.herokuapp.com/api/v1/cluaido/nft/{id}.json") Ownable() {
+    constructor(address[] memory _acceptedTokens) ERC1155("https://npc-gpt-api-04c6279a15ad.herokuapp.com/api/v1/cluaido/nft/{id}") Ownable() {
         maxSupply[SUSPECT_1_ID] = 10000000;
         maxSupply[SUSPECT_2_ID] = 10000000;
         maxSupply[SUSPECT_3_ID] = 10000000;
@@ -107,6 +107,11 @@ contract CluaidoCollection is ERC1155, Pausable, Ownable {
 
     function contractURI() public view returns (string memory) {
         return _contractURI;
+    }
+
+    function setURI(string memory newuri) public onlyOwner returns (bool) {
+         _setURI(newuri);
+         return true;
     }
 
 }

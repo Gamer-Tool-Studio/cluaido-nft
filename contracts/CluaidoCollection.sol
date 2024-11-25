@@ -11,7 +11,7 @@ import "@thirdweb-dev/contracts/extension/Multicall.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 
 contract CluaidoCollection is ERC1155, Pausable, Ownable, ContractMetadata, LazyMint, Multicall {
-    uint256 public mintPrice = 0.5 * (10 ** 18); //  stablecoins with 18 decimals
+    uint256 public mintPrice = 5 * (10 ** 18); //  stablecoins with 18 decimals
 
     mapping(uint256 => uint256) public mintedCount;
     mapping(uint256 => uint256) public maxSupply;   
@@ -37,7 +37,7 @@ contract CluaidoCollection is ERC1155, Pausable, Ownable, ContractMetadata, Lazy
     event TokenAccepted(address token);
     event TokenRemoved(address token);
 
-    constructor(address[] memory _acceptedTokens) ERC1155("https://npc-gpt-api-04c6279a15ad.herokuapp.com/api/v1/cluaido/nft/{id}.json") Ownable(msg.sender) {
+    constructor(address[] memory _acceptedTokens) ERC1155("https://npc-gpt-api-04c6279a15ad.herokuapp.com/api/v1/cluaido/nft/{id}") Ownable(msg.sender) {
         maxSupply[SUSPECT_1_ID] = 10000000;
         maxSupply[SUSPECT_2_ID] = 10000000;
         maxSupply[SUSPECT_3_ID] = 10000000;
@@ -116,15 +116,10 @@ contract CluaidoCollection is ERC1155, Pausable, Ownable, ContractMetadata, Lazy
         _unpause();
     }
 
-
-    function replaceId(string memory uriBase, uint256 tokenId) internal pure returns (string memory) {
-        // Convert the tokenId to a string
-        string memory tokenIdStr = Strings.toString(tokenId);
-        
-        // Find the "{id}" placeholder and replace it with the actual tokenId
-        return string(abi.encodePacked(
-            uriBase, tokenIdStr, ".json"
-        ));
+    
+    function setURI(string memory newuri) public onlyOwner returns (bool) {
+         _setURI(newuri);
+         return true;
     }
 
 
